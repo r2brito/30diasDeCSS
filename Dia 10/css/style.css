@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 244, 247);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'arial';
+}
+
+span:before{
+    content: '';
+    animation: animate infinite 8s;
+}
+
+@keyframes animate{
+
+    0% {content: '💻'}
+
+    50%{content: '🍕';}
+
+    100%{content: '🎮';}
+}
