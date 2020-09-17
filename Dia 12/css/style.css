@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #f6c2d2;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: verdana;
+  font-size: 5em;
+  color: #E8606E;
+  text-transform: uppercase;
+}
+
+h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #F679F5;
+  height: 0%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+h1:hover::before{
+  height: 100%;
+}
